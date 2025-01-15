@@ -4,6 +4,10 @@
   "description": "Шаблон для курса «Основы веб разработки»",
   "type": "module",
   "main": "index.js",
+  "engines": {
+    "node": "20.x",
+    "npm": "9.x"
+  },
   "scripts": {
     "check:js-style-rules": "eslint .",
     "check:css-style-rules": "stylelint */*.css",
