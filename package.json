@@ -7,7 +7,8 @@
   "scripts": {
     "check:lint": "eslint .",
     "check:format": "prettier . --check",
-    "fix:format": "prettier . --write"
+    "fix:format": "prettier . --write",
+    "create:commit": "npx better-commits"
   },
   "repository": {
     "type": "git",
