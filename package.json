@@ -1,0 +1,29 @@
+{
+  "name": "kontur-web-course-template",
+  "version": "1.0.0",
+  "description": "Шаблон для проекта для курса Основ веб разработки",
+  "main": "index.js",
+  "scripts": {
+    "check:lint": "eslint .",
+    "check:format": "prettier . --check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtkishkinVlad/kontur-web-course-template.git"
+  },
+  "keywords": [
+    "template"
+  ],
+  "author": "atkvs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AtkishkinVlad/kontur-web-course-template/issues"
+  },
+  "homepage": "https://github.com/AtkishkinVlad/kontur-web-course-template#readme",
+  "devDependencies": {
+    "@eslint/js": "9.18.0",
+    "eslint": "9.18.0",
+    "globals": "15.14.0",
+    "prettier": "3.4.2"
+  }
+}
