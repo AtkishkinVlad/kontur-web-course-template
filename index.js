@@ -1,5 +1,5 @@
 function helloWorld() {
-    return 'Hello world'
+  return "Hello world";
 }
 
-helloWorld()
+helloWorld();

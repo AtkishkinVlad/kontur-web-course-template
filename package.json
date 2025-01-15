@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "check:lint": "eslint .",
-    "check:format": "prettier . --check"
+    "check:format": "prettier . --check",
+    "fix:format": "prettier . --write"
   },
   "repository": {
     "type": "git",
