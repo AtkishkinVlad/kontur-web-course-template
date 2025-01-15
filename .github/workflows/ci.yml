@@ -24,8 +24,11 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run lint
-        run: npm run check:lint
+      - name: Check js codestyle
+        run: npm run check:js-style-rules
 
-      - name: Run format
+      - name: Check css codestyle
+        run: npm run check:css-style-rules
+
+      - name: Check file format
         run: npm run check:format

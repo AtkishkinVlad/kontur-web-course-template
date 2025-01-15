@@ -5,9 +5,11 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "check:lint": "eslint .",
+    "check:js-style-rules": "eslint .",
+    "check:css-style-rules": "stylelint *.css",
     "check:format": "prettier . --check",
-    "fix:lint": "eslint . --fix",
+    "fix:js-style-rules": "eslint . --fix",
+    "fix:css-style-rules": "stylelint *.css --fix",
     "fix:format": "prettier . --write",
     "create:commit": "npx better-commits"
   },
@@ -28,6 +30,8 @@
     "@eslint/js": "9.18.0",
     "eslint": "9.18.0",
     "globals": "15.14.0",
-    "prettier": "3.4.2"
+    "prettier": "3.4.2",
+    "stylelint": "^16.13.2",
+    "stylelint-config-standard": "^37.0.0"
   }
 }
