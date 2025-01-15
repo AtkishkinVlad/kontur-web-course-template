@@ -32,3 +32,6 @@ jobs:
 
       - name: Check file format
         run: npm run check:format
+
+      - name: Check accessibility
+        run: npm run check:a11y

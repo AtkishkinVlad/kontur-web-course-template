@@ -1,6 +1,7 @@
 import { launch } from "puppeteer";
 import { AxePuppeteer } from "axe-puppeteer";
 import { createServer } from "http-server";
+import { exit } from 'node:process';
 
 const server = createServer({ root: "./index.html" });
 const port = 8080;
@@ -20,7 +21,7 @@ server.listen(port, async () => {
       console.error(violation);
     });
 
-    process.exit(1);
+    exit(1);
   }
 
   await browser.close();
