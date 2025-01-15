@@ -1,7 +1,7 @@
 {
   "name": "kontur-web-course-template",
   "version": "1.0.0",
-  "description": "Шаблон для проекта для курса Основ веб разработки",
+  "description": "Шаблон для курса «Основы веб разработки»",
   "type": "module",
   "main": "index.js",
   "scripts": {
