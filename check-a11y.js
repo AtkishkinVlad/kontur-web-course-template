@@ -3,7 +3,7 @@ import { AxePuppeteer } from "axe-puppeteer";
 import { createServer } from "http-server";
 import { exit } from "node:process";
 
-const server = createServer({ root: "./" }); // Указываем корень директории, где находится index.html
+const server = createServer({ root: "./pages/index" });
 const port = 8080;
 
 server.listen(port, async () => {
