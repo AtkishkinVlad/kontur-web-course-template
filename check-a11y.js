@@ -3,10 +3,12 @@ import { AxePuppeteer } from "axe-puppeteer";
 import { createServer } from "http-server";
 import { exit } from "node:process";
 
-const server = createServer({ root: "./index.html" });
+const server = createServer({ root: "./" }); // Указываем корень директории, где находится index.html
 const port = 8080;
 
 server.listen(port, async () => {
+  console.log(`Server is running at http://localhost:${port}`);
+
   const browser = await launch({
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
@@ -24,6 +26,8 @@ server.listen(port, async () => {
     });
 
     exit(1);
+  } else {
+    console.log("No accessibility violations found.");
   }
 
   await browser.close();
