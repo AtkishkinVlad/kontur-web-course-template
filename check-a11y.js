@@ -1,7 +1,7 @@
 import { launch } from "puppeteer";
 import { AxePuppeteer } from "axe-puppeteer";
 import { createServer } from "http-server";
-import { exit } from 'node:process';
+import { exit } from "node:process";
 
 const server = createServer({ root: "./index.html" });
 const port = 8080;
