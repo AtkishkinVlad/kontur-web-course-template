@@ -6,11 +6,11 @@
   "main": "index.js",
   "scripts": {
     "check:js-style-rules": "eslint .",
-    "check:css-style-rules": "stylelint *.css",
+    "check:css-style-rules": "stylelint */*.css",
     "check:format": "prettier . --check",
     "check:a11y": "node check-a11y.js",
     "fix:js-style-rules": "eslint . --fix",
-    "fix:css-style-rules": "stylelint *.css --fix",
+    "fix:css-style-rules": "stylelint */*.css --fix",
     "fix:format": "prettier . --write",
     "create:commit": "npx better-commits"
   },
