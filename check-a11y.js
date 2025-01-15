@@ -7,7 +7,9 @@ const server = createServer({ root: "./index.html" });
 const port = 8080;
 
 server.listen(port, async () => {
-  const browser = await launch();
+  const browser = await launch({
+    args: ["--no-sandbox", "--disable-setuid-sandbox"],
+  });
   const page = await browser.newPage();
 
   await page.goto(`http://localhost:${port}/index.html`);
