@@ -8,6 +8,7 @@
     "check:js-style-rules": "eslint .",
     "check:css-style-rules": "stylelint *.css",
     "check:format": "prettier . --check",
+    "check:a11y": "node check-a11y.js",
     "fix:js-style-rules": "eslint . --fix",
     "fix:css-style-rules": "stylelint *.css --fix",
     "fix:format": "prettier . --write",
@@ -28,9 +29,13 @@
   "homepage": "https://github.com/AtkishkinVlad/kontur-web-course-template#readme",
   "devDependencies": {
     "@eslint/js": "9.18.0",
+    "axe-core": "4.10.2",
+    "axe-puppeteer": "1.1.1",
     "eslint": "9.18.0",
     "globals": "15.14.0",
+    "http-server": "14.1.1",
     "prettier": "3.4.2",
+    "puppeteer": "24.1.0",
     "stylelint": "16.13.2",
     "stylelint-config-standard": "37.0.0"
   }
